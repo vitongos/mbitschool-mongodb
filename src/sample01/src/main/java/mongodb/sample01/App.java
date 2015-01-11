@@ -14,14 +14,15 @@ public class App
 {
 	public static void main(String[] args) {
 		App app = new App();
-        get("/mongo/sample01", (req, res) -> app.getDog());
+        get("/mongo/sample01", (req, res) -> { return app.getDog().toString(); });
     }
 	
-	public String getDog() throws UnknownHostException
+	public DBObject getDog() throws UnknownHostException
 	{
 		MongoClient client = new MongoClient("localhost");
 		DB database = client.getDB("samples");
 		DBCollection collection = database.getCollection("dogs");
-		return (String) collection.findOne().get("name");
+		DBObject object = collection.findOne();
+		return object;
 	}
 }
