@@ -4,31 +4,38 @@ Demos y fuentes del módulo de MongoDB en Bases de Datos NoSQL
 Instalación
 -----------
 
-Instalar el repositorio clonándolo de Github:
+A continuación se especifica el proceso de instalación de los diferentes sistemas necesarios para ejecutar las demos.
 
+### Instalar el repositorio clonándolo de Github:
+Ejecutar el siguiente script:
 ```bash
-sudo yum install git
+sudo yum -y install git
 cd
 git clone https://github.com/vitongos/mbitschool-mongodb.git mongodb-src
 chmod +x mongodb-src/deploy/*.sh
 ```
 
-Instalar Eclipse
+### Instalar MongoDB
+Ejecutar el siguente script:
 ```bash
-cd ~/mongo-src/deploy/mongodb.sh
+cd ~/mongo-src/
+deploy/mongodb.sh
 ```
 
-Instalar Eclipse
+### Instalar Eclipse
+Ejecutar el siguiente script:
 ```bash
-cd ~/mongo-src/deploy/eclipse.sh
+cd ~/mongo-src/
+deploy/eclipse.sh
 ```
 
+### Instalar Java 8
 Descargar [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-
-Instalar Java 8
+Ejecutar el siguiente script:
 ```bash
-cd ~/mongo-src/deploy/java8.sh
+cd ~/mongo-src/
+deploy/java8.sh
 ```
 
 
