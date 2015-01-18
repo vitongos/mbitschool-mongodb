@@ -18,14 +18,14 @@ chmod +x mongodb-src/deploy/*.sh
 ### Instalar MongoDB
 Ejecutar el siguente script:
 ```bash
-cd ~/mongo-src/
+cd ~/mongodb-src/
 deploy/mongodb.sh
 ```
 
 ### Instalar Eclipse
 Ejecutar el siguiente script:
 ```bash
-cd ~/mongo-src/
+cd ~/mongodb-src/
 deploy/eclipse.sh
 ```
 
@@ -34,7 +34,7 @@ Descargar [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-
 
 Ejecutar el siguiente script:
 ```bash
-cd ~/mongo-src/
+cd ~/mongodb-src/
 deploy/java8.sh
 ```
 
